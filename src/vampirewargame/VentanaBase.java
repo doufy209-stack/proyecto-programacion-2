@@ -13,7 +13,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-/** Base para los menús principales, con una composición propia y monocromática. */
 public abstract class VentanaBase extends JFrame {
 
     protected final SistemaJuego sistema;
