@@ -29,8 +29,6 @@ public class VentanaPrincipal extends VentanaBase {
         panelBotones.add(crearBotonIcono("▥", "REPORTES", e -> abrirReportes()));
         panelBotones.add(crearBotonIcono("↪", "CERRAR SESIÓN", e -> cerrarSesion()));
 
-        // El jugador queda indicado de forma discreta dentro del propio menú,
-        // sin reproducir el encabezado del diseño original.
         subtitulo.setText(participante.getUsuario() + "  ·  " + participante.getPuntos() + " puntos");
         subtitulo.setFont(new Font("SansSerif", Font.PLAIN, 15));
         subtitulo.setForeground(Color.WHITE);
