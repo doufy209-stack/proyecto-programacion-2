@@ -335,7 +335,6 @@ public class VentanaPartida extends JFrame {
                         return;
                     }
                 } catch (JuegoException ex) {
-                    // Ignorar casillas inválidas: no deben existir dentro del tablero.
                 }
             }
         }
