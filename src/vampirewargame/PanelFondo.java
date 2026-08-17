@@ -8,7 +8,6 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import javax.swing.JPanel;
 
-/** Fondo limpio y monocromático, sin tablero, ajedrez ni elementos que distraigan. */
 public class PanelFondo extends JPanel {
 
     public PanelFondo() {
@@ -28,7 +27,6 @@ public class PanelFondo extends JPanel {
         g2.setPaint(fondo);
         g2.fillRect(0, 0, w, h);
 
-        // Líneas y marcos monocromáticos, sin iconografía de ajedrez.
         g2.setColor(new Color(235, 235, 238, 80));
         g2.setStroke(new BasicStroke(1f));
         g2.drawRect(12, 12, Math.max(0, w - 24), Math.max(0, h - 24));
