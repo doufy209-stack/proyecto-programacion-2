@@ -11,7 +11,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-/** Tema visual monocromático. Blanco y negro en toda la interfaz. */
 public final class Tema {
 
     public static final Color FONDO = new Color(8, 8, 10);
@@ -19,7 +18,6 @@ public final class Tema {
     public static final Color PANEL = new Color(16, 16, 19);
     public static final Color PANEL_CLARO = new Color(30, 30, 34);
 
-    // Se mantienen los nombres para no romper el resto del proyecto, pero todos son grises.
     public static final Color ROJO = new Color(80, 80, 84);
     public static final Color ROJO_HOVER = new Color(108, 108, 114);
     public static final Color ROJO_PRESIONADO = new Color(48, 48, 52);
