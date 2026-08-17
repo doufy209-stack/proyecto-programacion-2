@@ -251,13 +251,10 @@ public class Partida {
         if (resultadoAccion.isDestruida()) {
             tableroActual.eliminarPieza(renglonDestino, indiceColumnaDestino);
 
-            // Regla especial solicitada: la muerte del Necrómante destruye
-            // inmediatamente todos los Zombies de su mismo bando.
+            
             if (piezaObjetivo.getTipo() == TipoPieza.NECROMANTE) {
                 int zombiesEliminados = tableroActual.eliminarZombiesDeColor(piezaObjetivo.getColor());
                 if (zombiesEliminados > 0) {
-                    // El detalle queda registrado en el historial visual mediante
-                    // el mismo mensaje de ataque/resultado de la interfaz.
                 }
             }
         }
