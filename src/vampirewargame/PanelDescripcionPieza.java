@@ -16,7 +16,6 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
 
-/** Panel grande para ver claramente atributos y habilidad completa del personaje. */
 public class PanelDescripcionPieza extends JPanel {
 
     private final JLabel titulo;
