@@ -44,7 +44,6 @@ public class RepositorioJugadores implements InterfazJugadores {
         return buscarJugadorRecursivo(usuario.trim(), 0);
     }
 
-    // Función recursiva 1: búsqueda de jugador.
     private Jugador buscarJugadorRecursivo(String usuario, int indice) {
         if (indice >= cantidadDanio) {
             return null;
@@ -82,7 +81,6 @@ public class RepositorioJugadores implements InterfazJugadores {
         return ranking;
     }
 
-    // Función recursiva 2: ordena el ranking de mayor a menor cantidad de puntos.
     private void ordenarRankingRecursivo(Jugador[] ranking, int inicio) {
         if (inicio >= ranking.length - 1) {
             return;
