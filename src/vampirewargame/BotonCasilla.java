@@ -77,7 +77,6 @@ public class BotonCasilla extends JButton {
             g2.setColor(bordeCarta);
             g2.drawRoundRect(cardX, cardY, cardW, cardH, 18, 18);
 
-            // La ficha muestra únicamente el retrato. No se imprimen etiquetas ni A/V/E.
             int tamImagen = Math.min(cardW - 10, cardH - 10);
             int x = (getWidth() - tamImagen) / 2;
             int y = (getHeight() - tamImagen) / 2;
