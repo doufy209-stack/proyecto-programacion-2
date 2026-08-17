@@ -15,7 +15,6 @@ import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-/** Ruleta limpia en blanco y negro, con sectores amplios y legibles. */
 public class PanelRuleta extends JPanel {
 
     private final TipoPieza[] sectores;
@@ -111,7 +110,6 @@ public class PanelRuleta extends JPanel {
             rueda.setStroke(new BasicStroke(2.5f));
             rueda.drawArc(x, y, diametro, diametro, inicio, -60);
 
-            // Una sola ficha de imagen por sector, centrada dentro de su propio espacio.
             double angulo = Math.toRadians(-90 + i * 60 + 30);
             int radioImagen = (int) (diametro * 0.32);
             int tamImagen = Math.max(44, Math.min(60, diametro / 4));
@@ -148,7 +146,6 @@ public class PanelRuleta extends JPanel {
         g2.setColor(Color.BLACK);
         g2.drawString(centroTexto, cx - fmCentro.stringWidth(centroTexto) / 2, cy + fmCentro.getAscent() / 3);
 
-        // Puntero centrado exactamente sobre el eje vertical de la ruleta.
         Polygon puntero = new Polygon();
         puntero.addPoint(cx, 1);
         puntero.addPoint(cx - 12, 23);
