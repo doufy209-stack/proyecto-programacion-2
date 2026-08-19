@@ -195,10 +195,6 @@ public class Partida {
 
     public String retirarse(Jugador jugadorRetirado) throws JuegoException {
         validarPartidaActiva();
-        if (jugadorRetirado == null || (jugadorRetirado != usuarioBlanco && jugadorRetirado != usuarioNegro)) {
-            throw new JuegoException("El jugador indicado no pertenece a esta partida.");
-        }
-
         Jugador jugadorGanador = jugadorRetirado == usuarioBlanco ? usuarioNegro : usuarioBlanco;
         String mensaje = jugadorRetirado.getUsuario() + " se ha retirado. ¡Felicidades, " + jugadorGanador.getUsuario() + ", has ganado " + PUNTOS_POR_VICTORIA + " puntos!";
         finalizarPartida(jugadorGanador, jugadorRetirado, mensaje);
